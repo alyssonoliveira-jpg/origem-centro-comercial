@@ -158,6 +158,24 @@ h2{font-size:clamp(26px,3.2vw,40px);font-weight:900;letter-spacing:-.02em;margin
   .b-lg,.b-md{grid-column:span 2;}
 }
 
+/* ---------- STORE CARDS ---------- */
+.stores-heading{margin:56px 0 24px;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);}
+.store-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.store-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:22px;
+  display:flex;gap:14px;align-items:flex-start;transition:border-color .2s ease, transform .2s ease;
+}
+.store-card:hover{border-color:rgba(var(--accent-glow),.5);transform:translateY(-2px);}
+.store-mark{
+  flex:none;width:42px;height:42px;border-radius:6px;background:var(--surface-2);border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;color:var(--accent);
+}
+.store-card h4{font-size:15px;font-weight:800;margin:0 0 4px;}
+.store-card .store-cat{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;}
+.store-card p{font-size:13px;color:var(--muted);margin:0;font-style:italic;line-height:1.5;}
+@media (max-width:900px){ .store-grid{grid-template-columns:repeat(2,1fr);} }
+@media (max-width:600px){ .store-grid{grid-template-columns:1fr;} }
+
 /* ---------- ARCHITECTURE / PROCESS DIAGRAM ---------- */
 .diagram-wrap{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px;overflow:hidden;}
 #arch-svg{width:100%;height:auto;display:block;}
@@ -343,6 +361,82 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;}
       <span class="ic">// 14 LOJAS</span>
       <h3>Lazer & Entretenimento</h3>
       <p>Cinema, brinquedoteca e espaço kids para toda a família.</p>
+    </div>
+  </div>
+
+  <div class="stores-heading reveal">Marcas em destaque no Origem</div>
+  <div class="store-grid">
+    <div class="store-card reveal">
+      <div class="store-mark">G</div>
+      <div>
+        <div class="store-cat">Alimentação</div>
+        <h4>Grão & Cia</h4>
+        <p>"Café que acorda a cidade."</p>
+      </div>
+    </div>
+    <div class="store-card reveal">
+      <div class="store-mark">S</div>
+      <div>
+        <div class="store-cat">Alimentação</div>
+        <h4>Sabor de Casa</h4>
+        <p>"Comida de verdade, todo dia."</p>
+      </div>
+    </div>
+    <div class="store-card reveal">
+      <div class="store-mark">T</div>
+      <div>
+        <div class="store-cat">Moda & Acessórios</div>
+        <h4>Trama Urbana</h4>
+        <p>"Moda que veste seu jeito."</p>
+      </div>
+    </div>
+    <div class="store-card reveal">
+      <div class="store-mark">P</div>
+      <div>
+        <div class="store-cat">Moda & Acessórios</div>
+        <h4>Ponto Certo</h4>
+        <p>"Estilo sem esforço."</p>
+      </div>
+    </div>
+    <div class="store-card reveal">
+      <div class="store-mark">F</div>
+      <div>
+        <div class="store-cat">Serviços</div>
+        <h4>Fix Rápido</h4>
+        <p>"Assistência técnica no mesmo dia."</p>
+      </div>
+    </div>
+    <div class="store-card reveal">
+      <div class="store-mark">P</div>
+      <div>
+        <div class="store-cat">Serviços</div>
+        <h4>Papel & Cia</h4>
+        <p>"Tudo pra imprimir, embrulhar e enviar."</p>
+      </div>
+    </div>
+    <div class="store-card reveal">
+      <div class="store-mark">B</div>
+      <div>
+        <div class="store-cat">Beleza & Saúde</div>
+        <h4>Bela Hora</h4>
+        <p>"Beleza que cabe na sua agenda."</p>
+      </div>
+    </div>
+    <div class="store-card reveal">
+      <div class="store-mark">V</div>
+      <div>
+        <div class="store-cat">Beleza & Saúde</div>
+        <h4>Viva Bem Farma</h4>
+        <p>"Cuidado de perto, sempre por perto."</p>
+      </div>
+    </div>
+    <div class="store-card reveal">
+      <div class="store-mark">Z</div>
+      <div>
+        <div class="store-cat">Lazer & Entretenimento</div>
+        <h4>Zona Kids</h4>
+        <p>"Diversão garantida pra criançada."</p>
+      </div>
     </div>
   </div>
 </section>
