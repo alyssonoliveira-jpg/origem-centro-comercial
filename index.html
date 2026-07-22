@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ORIGEM — Centro Comercial em Uberlândia</title>
+<title>PHM Auto Mecânica — Uberlândia</title>
 <style>
 :root{
-  --bg:#070a0c;
-  --surface:#0f1417;
-  --surface-2:#161d21;
-  --line:#232c31;
-  --text:#eef3f2;
-  --muted:#8798a0;
-  --accent:#17e0c2;
-  --accent-2:#7bf3e0;
-  --accent-glow: 23,224,194;
+  --bg:#0c0908;
+  --surface:#161110;
+  --surface-2:#1e1715;
+  --line:#332622;
+  --text:#f5efec;
+  --muted:#a2938c;
+  --accent:#e8332a;
+  --accent-2:#ff7a5c;
+  --accent-glow: 232,51,42;
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -25,7 +25,7 @@ body{
 }
 .mono{font-family:ui-monospace,SFMono-Regular,"SF Mono",Consolas,monospace;}
 a{color:inherit;text-decoration:none;}
-::selection{background:var(--accent);color:#070a0c;}
+::selection{background:var(--accent);color:#0c0908;}
 .wrap{max-width:1180px;margin:0 auto;padding-left:28px;padding-right:28px;}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
 .reveal.in{opacity:1;transform:translateY(0);}
@@ -43,7 +43,7 @@ a{color:inherit;text-decoration:none;}
 /* ---------- NAV ---------- */
 header.nav{
   position:sticky;top:0;z-index:100;
-  background:rgba(7,10,12,.68);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  background:rgba(12,9,8,.68);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
   border-bottom:1px solid var(--line);
 }
 .nav-row{display:flex;align-items:center;justify-content:space-between;padding:16px 28px;max-width:1180px;margin:0 auto;}
@@ -52,16 +52,16 @@ header.nav{
 nav.links{display:flex;gap:30px;font-size:13px;font-weight:600;color:var(--muted);}
 nav.links a:hover{color:var(--text);}
 .nav-cta{
-  background:var(--accent);color:#06110f;font-weight:800;font-size:13px;padding:10px 18px;border-radius:3px;
+  background:var(--accent);color:#fff;font-weight:800;font-size:13px;padding:10px 18px;border-radius:3px;
 }
 @media (max-width:820px){ nav.links{display:none;} }
 
 /* ---------- HERO ---------- */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:80px 0 60px;overflow:hidden;}
-.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;filter:saturate(.85) brightness(.75);}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;filter:saturate(.9) brightness(.7);}
 .hero::after{
   content:"";position:absolute;inset:0;z-index:1;
-  background:linear-gradient(180deg, rgba(7,10,12,.45) 0%, rgba(7,10,12,.82) 65%, var(--bg) 100%);
+  background:linear-gradient(180deg, rgba(12,9,8,.45) 0%, rgba(12,9,8,.84) 65%, var(--bg) 100%);
 }
 .hero-inner{position:relative;z-index:2;max-width:760px;}
 .eyebrow{
@@ -71,8 +71,8 @@ nav.links a:hover{color:var(--text);}
 }
 .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);}
 h1.hero-title{
-  font-size:clamp(32px,5vw,60px);line-height:1.1;font-weight:900;letter-spacing:-.02em;
-  margin:0 0 22px;text-wrap:balance;min-height:calc(3 * clamp(32px,5vw,60px) * 1.1);
+  font-size:clamp(32px,5vw,58px);line-height:1.1;font-weight:900;letter-spacing:-.02em;
+  margin:0 0 22px;text-wrap:balance;min-height:calc(3 * clamp(32px,5vw,58px) * 1.1);
 }
 h1.hero-title .word{display:inline-block;opacity:0;filter:blur(6px);transform:translateY(10px);
   transition:opacity .5s ease,filter .5s ease,transform .5s ease;}
@@ -89,11 +89,11 @@ h1.hero-title .term:hover .tip{opacity:1;transform:translateX(-50%) translateY(0
 .hero-sub{font-size:17px;line-height:1.6;color:var(--muted);max-width:52ch;margin-bottom:32px;}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:44px;}
 .btn-lg{
-  background:var(--accent);color:#06110f;font-weight:800;font-size:15px;padding:15px 26px;border-radius:3px;
+  background:var(--accent);color:#fff;font-weight:800;font-size:15px;padding:15px 26px;border-radius:3px;
   display:inline-flex;align-items:center;gap:10px;box-shadow:0 8px 30px -8px rgba(var(--accent-glow),.5);
   border:none;cursor:pointer;
 }
-.btn-outline{border:1px solid var(--line);font-weight:700;font-size:15px;color:var(--text);padding:14px 22px;border-radius:3px;background:rgba(15,20,23,.5);}
+.btn-outline{border:1px solid var(--line);font-weight:700;font-size:15px;color:var(--text);padding:14px 22px;border-radius:3px;background:rgba(22,17,16,.5);}
 .hero-metrics{display:flex;gap:34px;flex-wrap:wrap;}
 .metric b{display:block;font-size:24px;font-weight:900;font-variant-numeric:tabular-nums;font-family:ui-monospace,monospace;}
 .metric span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;}
@@ -123,20 +123,7 @@ h2{font-size:clamp(26px,3.2vw,40px);font-weight:900;letter-spacing:-.02em;margin
 .counter-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent-2));width:0%;transition:width .6s cubic-bezier(.2,.8,.2,1);}
 .counter-note{color:var(--muted);font-size:13px;margin-top:14px;line-height:1.6;}
 
-/* ---------- SEARCH + STORES ---------- */
-.search-row{display:flex;gap:12px;margin-bottom:32px;flex-wrap:wrap;}
-.search-input{
-  flex:1;min-width:240px;background:var(--surface);border:1px solid var(--line);color:var(--text);
-  padding:14px 16px;border-radius:4px;font-size:14px;
-}
-.search-input::placeholder{color:var(--muted);}
-.filter-chip{
-  background:var(--surface-2);border:1px solid var(--line);color:var(--muted);font-size:13px;font-weight:600;
-  padding:12px 16px;border-radius:4px;cursor:pointer;
-}
-.filter-chip.active{border-color:var(--accent);color:var(--accent-2);}
-
-/* ---------- BENTO ---------- */
+/* ---------- BENTO (SERVIÇOS) ---------- */
 .bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:16px;}
 .bento-card{
   position:relative;background:var(--surface);border:1px solid var(--line);border-radius:6px;
@@ -154,11 +141,12 @@ h2{font-size:clamp(26px,3.2vw,40px);font-weight:900;letter-spacing:-.02em;margin
     repeating-linear-gradient(115deg, rgba(255,255,255,.05) 0 2px, transparent 2px 22px),
     radial-gradient(120% 140% at 20% 15%, rgba(255,255,255,.14), transparent 60%);
 }
-.cat-food{background:linear-gradient(135deg,#0d6b52,#0a2e2a);}
-.cat-fashion{background:linear-gradient(135deg,#6b3fa0,#2b1a45);}
-.cat-beauty{background:linear-gradient(135deg,#a03f6f,#3a1428);}
-.cat-services{background:linear-gradient(135deg,#2a6b8f,#0f2a3a);}
-.cat-leisure{background:linear-gradient(135deg,#b06a1f,#3a2308);}
+.cat-diag{background:linear-gradient(135deg,#8f2a1f,#3a0f0a);}
+.cat-oil{background:linear-gradient(135deg,#a06a1f,#3a2408);}
+.cat-brake{background:linear-gradient(135deg,#7a2020,#2e0c0c);}
+.cat-ac{background:linear-gradient(135deg,#1f6b8f,#0a2e3a);}
+.cat-elec{background:linear-gradient(135deg,#8f6a1f,#3a2a08);}
+.cat-review{background:linear-gradient(135deg,#5c2a8f,#22103a);}
 .bento-body{position:relative;padding:18px 22px 20px;}
 .bento-card::before{
   content:"";position:absolute;inset:0;opacity:0;transition:opacity .25s ease;pointer-events:none;z-index:3;
@@ -167,7 +155,7 @@ h2{font-size:clamp(26px,3.2vw,40px);font-weight:900;letter-spacing:-.02em;margin
 .bento-card:hover::before{opacity:1;}
 .bento-card h3{font-size:16px;font-weight:800;margin:0 0 6px;position:relative;}
 .bento-card p{font-size:13px;color:var(--muted);margin:0;position:relative;line-height:1.5;}
-.bento-card .ic{font-family:ui-monospace,monospace;color:var(--accent);font-size:11px;position:relative;display:block;margin-bottom:8px;}
+.bento-card .ic{font-family:ui-monospace,monospace;color:var(--accent-2);font-size:11px;position:relative;display:block;margin-bottom:8px;font-style:italic;}
 .b-lg{grid-column:span 2;grid-row:span 2;}
 .b-md{grid-column:span 2;}
 .b-sm{grid-column:span 1;}
@@ -178,7 +166,7 @@ h2{font-size:clamp(26px,3.2vw,40px);font-weight:900;letter-spacing:-.02em;margin
   .b-lg,.b-md{grid-column:span 2;}
 }
 
-/* ---------- STORE CARDS ---------- */
+/* ---------- TRUST BADGES ---------- */
 .stores-heading{margin:56px 0 24px;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);}
 .store-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
 .store-card{
@@ -192,11 +180,11 @@ h2{font-size:clamp(26px,3.2vw,40px);font-weight:900;letter-spacing:-.02em;margin
 }
 .store-card h4{font-size:15px;font-weight:800;margin:0 0 4px;}
 .store-card .store-cat{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;}
-.store-card p{font-size:13px;color:var(--muted);margin:0;font-style:italic;line-height:1.5;}
+.store-card p{font-size:13px;color:var(--muted);margin:0;line-height:1.5;}
 @media (max-width:900px){ .store-grid{grid-template-columns:repeat(2,1fr);} }
 @media (max-width:600px){ .store-grid{grid-template-columns:1fr;} }
 
-/* ---------- ARCHITECTURE / PROCESS DIAGRAM ---------- */
+/* ---------- PROCESS DIAGRAM ---------- */
 .diagram-wrap{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px;overflow:hidden;}
 #arch-svg{width:100%;height:auto;display:block;}
 .arch-node{cursor:pointer;}
@@ -258,12 +246,12 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
 .contact-form textarea{resize:vertical;min-height:90px;}
 
 /* ---------- CTA ---------- */
-.cta-strip{position:relative;overflow:hidden;background:linear-gradient(120deg,#17e0c2,#0a8f7d);border-radius:10px;padding:64px;text-align:center;}
-.cta-strip::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(7,10,12,.14) 1px, transparent 1px),linear-gradient(90deg, rgba(7,10,12,.14) 1px, transparent 1px);background-size:42px 42px;}
+.cta-strip{position:relative;overflow:hidden;background:linear-gradient(120deg,#e8332a,#8f1f18);border-radius:10px;padding:64px;text-align:center;}
+.cta-strip::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(12,9,8,.16) 1px, transparent 1px),linear-gradient(90deg, rgba(12,9,8,.16) 1px, transparent 1px);background-size:42px 42px;}
 .cta-strip > *{position:relative;}
-.cta-strip h2{color:#06110f;margin-bottom:14px;}
-.cta-strip p{color:rgba(6,17,15,.72);margin:0 auto 30px;max-width:48ch;font-size:16px;}
-.cta-strip .btn-lg{background:#06110f;color:#fff;box-shadow:0 8px 30px -8px rgba(0,0,0,.5);}
+.cta-strip h2{color:#fff;margin-bottom:14px;}
+.cta-strip p{color:rgba(255,255,255,.82);margin:0 auto 30px;max-width:48ch;font-size:16px;}
+.cta-strip .btn-lg{background:#0c0908;color:#fff;box-shadow:0 8px 30px -8px rgba(0,0,0,.5);}
 
 /* ---------- FOOTER ---------- */
 footer{border-top:1px solid var(--line);padding:56px 0 40px;}
@@ -282,54 +270,54 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;}
 
 <div class="info-bar">
   <div class="info-row mono">
-    <span class="seg"><span><span class="dot"></span>Av. Origem, 1200, Uberlândia — MG</span><span>Seg a Sáb: 10h às 21h · Dom: 11h às 18h</span></span>
-    <span class="seg"><span>(34) 3200-1177</span></span>
+    <span class="seg"><span><span class="dot"></span>R. Domingos Álvares, 137 — Pres. Roosevelt, Uberlândia - MG</span><span>Seg a Sex: 8h às 18h · Sáb: 8h às 12h</span></span>
+    <span class="seg"><span>(34) 3255-0827</span></span>
   </div>
 </div>
 
 <header class="nav">
   <div class="nav-row">
-    <div class="logo"><span class="mark"></span>ORIGEM</div>
+    <div class="logo"><span class="mark"></span>PHM AUTO MECÂNICA</div>
     <nav class="links">
-      <a href="#lojas">Nossas Lojas</a>
-      <a href="#locacao">Espaços para locação</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
       <a href="#localizacao">Localização</a>
       <a href="#contato">Fale conosco</a>
     </nav>
-    <a class="nav-cta" href="#contato">Fale conosco</a>
+    <a class="nav-cta" href="#contato">Agendar horário</a>
   </div>
 </header>
 
 <section class="hero">
-  <video autoplay muted loop playsinline poster="assets/hero-poster.jpg">
+  <video autoplay muted loop playsinline>
     <source src="assets/hero.mp4" type="video/mp4">
   </video>
   <div class="wrap hero-inner">
-    <span class="eyebrow"><i class="dot"></i>CENTRO COMERCIAL EM UBERLÂNDIA</span>
-    <h1 class="hero-title" id="hero-title" aria-label="Compras, lazer e serviços em um só endereço, pensado para o seu dia inteiro. Espaço vivo, com fluxo constante e condições de locação sob medida. O seu novo tudo está no Origem."><!-- populated by script --></h1>
-    <p class="hero-sub">Mais de 12.000m² de área construída, estacionamento gratuito e um mix de lojas que combina o dia a dia com os melhores momentos de lazer da cidade.</p>
+    <span class="eyebrow"><i class="dot"></i>OFICINA PHM AUTO MECÂNICA · UBERLÂNDIA</span>
+    <h1 class="hero-title" id="hero-title" aria-label="Seu carro merece um diagnóstico de verdade, não um chute. Orçamento transparente, peças de procedência e garantia real em cada serviço. Isso é cuidar do seu carro como se fosse nosso."><!-- populated by script --></h1>
+    <p class="hero-sub">Diagnóstico computadorizado, orçamento sem surpresa e prazo cumprido. A PHM resolve o problema — não empurra ele pra frente.</p>
     <div class="hero-cta">
-      <a class="btn-lg" href="#lojas">Conheça as lojas →</a>
-      <a class="btn-outline" href="#locacao">Espaços para locação</a>
+      <a class="btn-lg" href="#contato">Agendar horário →</a>
+      <a class="btn-outline" href="#servicos">Ver serviços</a>
     </div>
     <div class="hero-metrics">
-      <div class="metric"><b class="count" data-target="12000" data-suffix="m²">0m²</b><span>Área construída</span></div>
-      <div class="metric"><b class="count" data-target="86" data-suffix="">0</b><span>Lojas e serviços</span></div>
-      <div class="metric"><b class="count" data-target="640" data-suffix="">0</b><span>Vagas gratuitas</span></div>
+      <div class="metric"><b class="count" data-target="12" data-suffix=" anos">0 anos</b><span>De oficina em Uberlândia</span></div>
+      <div class="metric"><b class="count" data-target="90" data-suffix=" dias">0 dias</b><span>De garantia em serviços</span></div>
+      <div class="metric"><b class="count" data-target="4.8" data-suffix="★">0★</b><span>Avaliação dos clientes</span></div>
     </div>
   </div>
 </section>
 
 <div class="ticker-bar">
   <div class="ticker-track mono">
-    <span><i class="dot"></i>ESTACIONAMENTO GRATUITO TODOS OS DIAS</span>
-    <span><i class="dot"></i>PRAÇA DE ALIMENTAÇÃO ATÉ 21H</span>
-    <span><i class="dot"></i>CONDIÇÕES ESPECIAIS PARA NOVOS LOJISTAS</span>
-    <span><i class="dot"></i>EVENTOS DE LAZER TODO FIM DE SEMANA</span>
-    <span><i class="dot"></i>ESTACIONAMENTO GRATUITO TODOS OS DIAS</span>
-    <span><i class="dot"></i>PRAÇA DE ALIMENTAÇÃO ATÉ 21H</span>
-    <span><i class="dot"></i>CONDIÇÕES ESPECIAIS PARA NOVOS LOJISTAS</span>
-    <span><i class="dot"></i>EVENTOS DE LAZER TODO FIM DE SEMANA</span>
+    <span><i class="dot"></i>DIAGNÓSTICO COMPUTADORIZADO NA HORA</span>
+    <span><i class="dot"></i>ORÇAMENTO SEM COMPROMISSO</span>
+    <span><i class="dot"></i>GARANTIA DE 90 DIAS EM TODO SERVIÇO</span>
+    <span><i class="dot"></i>ATENDIMENTO COM HORA MARCADA</span>
+    <span><i class="dot"></i>DIAGNÓSTICO COMPUTADORIZADO NA HORA</span>
+    <span><i class="dot"></i>ORÇAMENTO SEM COMPROMISSO</span>
+    <span><i class="dot"></i>GARANTIA DE 90 DIAS EM TODO SERVIÇO</span>
+    <span><i class="dot"></i>ATENDIMENTO COM HORA MARCADA</span>
   </div>
 </div>
 
@@ -337,202 +325,182 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;}
   <div class="wrap counter-grid">
     <div class="reveal">
       <div class="counter-value mono" id="counter-val">0</div>
-      <div class="counter-label">visitantes no Origem hoje</div>
+      <div class="counter-label">carros atendidos hoje na PHM</div>
     </div>
     <div class="reveal">
-      <div class="counter-goal-row"><span>Meta do dia</span><span id="counter-goal-label">0 / 9.000</span></div>
+      <div class="counter-goal-row"><span>Meta do dia</span><span id="counter-goal-label">0 / 24</span></div>
       <div class="counter-bar"><div class="counter-fill" id="counter-fill"></div></div>
-      <p class="counter-note">Ao atingir a meta diária, o painel reinicia a contagem automaticamente para o próximo dia de operação.</p>
+      <p class="counter-note">Ao atingir a meta diária, o painel reinicia a contagem automaticamente para o próximo dia de atendimento.</p>
     </div>
   </div>
 </div>
 
-<section class="wrap" id="lojas">
+<section class="wrap" id="servicos">
   <div class="section-head reveal">
-    <div class="section-tag">Nossas Lojas</div>
-    <h2>Encontre o que você precisa, por categoria</h2>
-    <p>Do café da manhã ao presente de última hora — o mix do Origem foi pensado para o seu dia inteiro.</p>
-  </div>
-  <div class="search-row reveal">
-    <input class="search-input" type="text" placeholder="Pesquisar loja, serviço ou categoria...">
-    <button class="filter-chip active">Todas</button>
-    <button class="filter-chip">Alimentação</button>
-    <button class="filter-chip">Moda</button>
-    <button class="filter-chip">Serviços</button>
-    <button class="filter-chip">Lazer</button>
+    <div class="section-tag">Nossos Serviços</div>
+    <h2>Seis frentes, um só compromisso: resolver de verdade</h2>
+    <p>Do diagnóstico ao acabamento, cada serviço da PHM é feito pra durar — não pra você voltar em uma semana.</p>
   </div>
   <div class="bento">
     <div class="bento-card b-lg reveal">
-      <div class="bento-photo cat-food">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 3v7a3 3 0 0 0 3 3v8"/><path d="M7 3v7"/><path d="M10 3v7"/><path d="M17 3c-2 0-3 2-3 5s1 5 3 5v8"/></svg>
+      <div class="bento-photo cat-diag">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M7 20h10M12 16v4"/><path d="M7 9h3l1-2 2 4 1-2h3"/></svg>
       </div>
       <div class="bento-body">
-        <span class="ic">// 24 LOJAS</span>
-        <h3>Alimentação</h3>
-        <p>Praça de alimentação, cafés e restaurantes abertos até as 21h de segunda a sábado.</p>
+        <span class="ic">"Seu carro fala, a gente escuta."</span>
+        <h3>Diagnóstico Eletrônico</h3>
+        <p>Escaneamento computadorizado completo para achar a causa real do problema — não só o sintoma.</p>
       </div>
     </div>
     <div class="bento-card b-sm reveal">
-      <div class="bento-photo cat-fashion">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 4 12 6l3-2 4 3-2 3-2-1v11H8V10l-2 1-2-3Z"/></svg>
-      </div>
-      <div class="bento-body">
-        <span class="ic">// 18 LOJAS</span>
-        <h3>Moda & Acessórios</h3>
-        <p>Das grandes marcas às lojas locais.</p>
-      </div>
-    </div>
-    <div class="bento-card b-sm reveal">
-      <div class="bento-photo cat-beauty">
+      <div class="bento-photo cat-oil">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3c3 3 6 6 6 10a6 6 0 1 1-12 0c0-4 3-7 6-10Z"/></svg>
       </div>
       <div class="bento-body">
-        <span class="ic">// 14 LOJAS</span>
-        <h3>Beleza & Saúde</h3>
-        <p>Farmácia, salão e clínicas de estética.</p>
+        <span class="ic">"Entra, troca, sai rodando."</span>
+        <h3>Troca de Óleo Expressa</h3>
+        <p>Óleo e filtros trocados em até 20 minutos, sem precisar deixar o carro o dia todo.</p>
+      </div>
+    </div>
+    <div class="bento-card b-sm reveal">
+      <div class="bento-photo cat-brake">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.4"/><path d="M12 4v3M12 17v3M4 12h3M17 12h3"/></svg>
+      </div>
+      <div class="bento-body">
+        <span class="ic">"Sua segurança não é opcional."</span>
+        <h3>Freios & Suspensão</h3>
+        <p>Pastilhas, discos e amortecedores revisados com o carro no elevador, na sua frente.</p>
       </div>
     </div>
     <div class="bento-card b-md reveal">
-      <div class="bento-photo cat-services">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="18" height="13" rx="1.5"/><path d="M8 6V4h8v2"/></svg>
+      <div class="bento-photo cat-ac">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 9h18M3 15h18"/><path d="M6 9l-2 3 2 3M18 9l2 3-2 3"/></svg>
       </div>
       <div class="bento-body">
-        <span class="ic">// 16 LOJAS</span>
-        <h3>Serviços</h3>
-        <p>Banco, correios, papelaria e assistência técnica em um só lugar.</p>
+        <span class="ic">"Verão não é desculpa pra suar no carro."</span>
+        <h3>Ar-condicionado Automotivo</h3>
+        <p>Higienização, recarga de gás e reparo do sistema de climatização completo.</p>
       </div>
     </div>
     <div class="bento-card b-md reveal">
-      <div class="bento-photo cat-leisure">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M6 21c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg>
+      <div class="bento-photo cat-elec">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg>
       </div>
       <div class="bento-body">
-        <span class="ic">// 14 LOJAS</span>
-        <h3>Lazer & Entretenimento</h3>
-        <p>Cinema, brinquedoteca e espaço kids para toda a família.</p>
+        <span class="ic">"Carro não liga? A gente resolve na hora."</span>
+        <h3>Elétrica & Bateria</h3>
+        <p>Teste de alternador, bateria e fiação com equipamento próprio — sem achismo.</p>
+      </div>
+    </div>
+  </div>
+  <div class="bento" style="margin-top:16px;grid-template-columns:1fr;">
+    <div class="bento-card reveal" style="grid-column:1;">
+      <div class="bento-photo cat-review" style="min-height:110px;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 11l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+      </div>
+      <div class="bento-body">
+        <span class="ic">"Antes que o problema vire pane."</span>
+        <h3>Revisão Preventiva Completa</h3>
+        <p>Checklist de mais de 40 itens para pegar o desgaste antes dele te deixar na mão na estrada.</p>
       </div>
     </div>
   </div>
 
-  <div class="stores-heading reveal">Marcas em destaque no Origem</div>
+  <div class="stores-heading reveal">Por que escolher a PHM</div>
   <div class="store-grid">
     <div class="store-card reveal">
       <div class="store-mark">G</div>
       <div>
-        <div class="store-cat">Alimentação</div>
-        <h4>Grão & Cia</h4>
-        <p>"Café que acorda a cidade."</p>
+        <div class="store-cat">Garantia</div>
+        <h4>90 dias em todo serviço</h4>
+        <p>Se o problema voltar dentro do prazo, o reparo é por nossa conta.</p>
       </div>
     </div>
     <div class="store-card reveal">
-      <div class="store-mark">S</div>
+      <div class="store-mark">O</div>
       <div>
-        <div class="store-cat">Alimentação</div>
-        <h4>Sabor de Casa</h4>
-        <p>"Comida de verdade, todo dia."</p>
-      </div>
-    </div>
-    <div class="store-card reveal">
-      <div class="store-mark">T</div>
-      <div>
-        <div class="store-cat">Moda & Acessórios</div>
-        <h4>Trama Urbana</h4>
-        <p>"Moda que veste seu jeito."</p>
+        <div class="store-cat">Transparência</div>
+        <h4>Orçamento sem surpresa</h4>
+        <p>Você aprova cada item antes de qualquer peça ser trocada.</p>
       </div>
     </div>
     <div class="store-card reveal">
       <div class="store-mark">P</div>
       <div>
-        <div class="store-cat">Moda & Acessórios</div>
-        <h4>Ponto Certo</h4>
-        <p>"Estilo sem esforço."</p>
+        <div class="store-cat">Peças</div>
+        <h4>Procedência garantida</h4>
+        <p>Peças originais ou de fabricantes homologados, nunca paralelas.</p>
       </div>
     </div>
     <div class="store-card reveal">
-      <div class="store-mark">F</div>
+      <div class="store-mark">D</div>
       <div>
-        <div class="store-cat">Serviços</div>
-        <h4>Fix Rápido</h4>
-        <p>"Assistência técnica no mesmo dia."</p>
+        <div class="store-cat">Diagnóstico</div>
+        <h4>Computadorizado e gratuito</h4>
+        <p>Escaneamento eletrônico sem custo antes de qualquer orçamento.</p>
       </div>
     </div>
     <div class="store-card reveal">
-      <div class="store-mark">P</div>
+      <div class="store-mark">E</div>
       <div>
-        <div class="store-cat">Serviços</div>
-        <h4>Papel & Cia</h4>
-        <p>"Tudo pra imprimir, embrulhar e enviar."</p>
+        <div class="store-cat">Equipe</div>
+        <h4>Mecânicos certificados</h4>
+        <p>Time treinado para carros nacionais e importados.</p>
       </div>
     </div>
     <div class="store-card reveal">
-      <div class="store-mark">B</div>
+      <div class="store-mark">A</div>
       <div>
-        <div class="store-cat">Beleza & Saúde</div>
-        <h4>Bela Hora</h4>
-        <p>"Beleza que cabe na sua agenda."</p>
-      </div>
-    </div>
-    <div class="store-card reveal">
-      <div class="store-mark">V</div>
-      <div>
-        <div class="store-cat">Beleza & Saúde</div>
-        <h4>Viva Bem Farma</h4>
-        <p>"Cuidado de perto, sempre por perto."</p>
-      </div>
-    </div>
-    <div class="store-card reveal">
-      <div class="store-mark">Z</div>
-      <div>
-        <div class="store-cat">Lazer & Entretenimento</div>
-        <h4>Zona Kids</h4>
-        <p>"Diversão garantida pra criançada."</p>
+        <div class="store-cat">Agilidade</div>
+        <h4>Atendimento com hora marcada</h4>
+        <p>Sem fila e sem carro parado esperando vaga no pátio.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="wrap" id="locacao">
+<section class="wrap" id="como-funciona">
   <div class="section-head reveal">
-    <div class="section-tag">Espaços para locação</div>
-    <h2>Sua marca com visibilidade garantida</h2>
-    <p>Clique em cada etapa para entender como funciona o processo de locação, do primeiro contato à abertura da loja.</p>
+    <div class="section-tag">Como funciona</div>
+    <h2>Do agendamento à entrega, sem enrolação</h2>
+    <p>Clique em cada etapa para entender como funciona o atendimento na PHM.</p>
   </div>
   <div class="diagram-wrap reveal">
-    <svg id="arch-svg" viewBox="0 0 900 320" role="img" aria-label="Processo de locação de espaço no Origem">
+    <svg id="arch-svg" viewBox="0 0 900 320" role="img" aria-label="Processo de atendimento da PHM Auto Mecânica">
       <path class="arch-line" id="line-1" d="M100,160 C220,160 220,90 360,90"></path>
       <path class="arch-line" id="line-2" d="M100,160 C220,160 220,230 360,230"></path>
       <path class="arch-line" id="line-3" d="M360,90 C480,90 480,160 600,160"></path>
       <path class="arch-line" id="line-4" d="M360,230 C480,230 480,160 600,160"></path>
       <path class="arch-line" id="line-5" d="M600,160 C700,160 700,160 800,160"></path>
 
-      <g class="arch-node" data-key="contato" transform="translate(100,160)">
+      <g class="arch-node" data-key="agendamento" transform="translate(100,160)">
         <circle r="42"></circle>
-        <text text-anchor="middle" y="-2">CONTATO</text>
-        <text class="sub" text-anchor="middle" y="14">interesse</text>
+        <text text-anchor="middle" y="-2">AGENDA</text>
+        <text class="sub" text-anchor="middle" y="14">horário</text>
       </g>
-      <g class="arch-node" data-key="visita" transform="translate(360,90)">
+      <g class="arch-node" data-key="diagnostico" transform="translate(360,90)">
         <circle r="42"></circle>
-        <text text-anchor="middle" y="-2">VISITA</text>
-        <text class="sub" text-anchor="middle" y="14">técnica</text>
+        <text text-anchor="middle" y="-2">DIAGNÓS.</text>
+        <text class="sub" text-anchor="middle" y="14">eletrônico</text>
       </g>
-      <g class="arch-node" data-key="proposta" transform="translate(360,230)">
+      <g class="arch-node" data-key="orcamento" transform="translate(360,230)">
         <circle r="42"></circle>
-        <text text-anchor="middle" y="-2">PROPOSTA</text>
-        <text class="sub" text-anchor="middle" y="14">condições</text>
+        <text text-anchor="middle" y="-2">ORÇAMENTO</text>
+        <text class="sub" text-anchor="middle" y="14">aprovação</text>
       </g>
-      <g class="arch-node" data-key="contrato" transform="translate(600,160)">
+      <g class="arch-node" data-key="execucao" transform="translate(600,160)">
         <circle r="42"></circle>
-        <text text-anchor="middle" y="-2">CONTRATO</text>
-        <text class="sub" text-anchor="middle" y="14">assinatura</text>
+        <text text-anchor="middle" y="-2">EXECUÇÃO</text>
+        <text class="sub" text-anchor="middle" y="14">reparo</text>
       </g>
-      <g class="arch-node" data-key="abertura" transform="translate(800,160)">
+      <g class="arch-node" data-key="entrega" transform="translate(800,160)">
         <circle r="34"></circle>
-        <text text-anchor="middle" y="4" style="font-size:10px">ABERTURA</text>
+        <text text-anchor="middle" y="4" style="font-size:10px">ENTREGA</text>
       </g>
     </svg>
     <div class="arch-info" id="arch-info">
-      <b>Contato</b>
-      Você preenche o formulário ou liga informando o metro quadrado desejado e o tipo de operação.
+      <b>Agendamento</b>
+      Você marca um horário fixo pelo telefone ou WhatsApp — sem deixar o carro esperando vaga no pátio.
     </div>
   </div>
 </section>
@@ -540,41 +508,41 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;}
 <section class="wrap" id="simulador">
   <div class="section-head reveal">
     <div class="section-tag">Simulador</div>
-    <h2>Estime a exposição da sua loja</h2>
-    <p>Ajuste o tamanho do espaço e a posição no corredor para estimar o fluxo de visibilidade.</p>
+    <h2>Estime o risco de rodar sem revisão</h2>
+    <p>Ajuste a quilometragem e o tempo desde a última revisão para ver o quanto vale a pena agendar agora.</p>
   </div>
   <div class="sim reveal">
     <div class="sim-controls">
       <div class="sim-row">
-        <label>Tamanho do espaço — <output id="out-area">45</output> m²</label>
-        <input type="range" id="in-area" min="15" max="300" value="45" step="5">
+        <label>Km rodados desde a última revisão — <output id="out-km">8</output> mil km</label>
+        <input type="range" id="in-km" min="1" max="30" value="8" step="1">
       </div>
       <div class="sim-row">
-        <label>Posição no corredor (1 lateral · 5 praça central) — <output id="out-pos">3</output></label>
-        <input type="range" id="in-pos" min="1" max="5" value="3" step="1">
+        <label>Meses desde a última revisão — <output id="out-meses">6</output></label>
+        <input type="range" id="in-meses" min="1" max="24" value="6" step="1">
       </div>
       <div class="sim-row">
-        <label>Dias de operação por semana — <output id="out-dias">6</output></label>
-        <input type="range" id="in-dias" min="3" max="7" value="6" step="1">
+        <label>Uso predominante (1 cidade calma · 5 rodovia pesada) — <output id="out-uso">3</output></label>
+        <input type="range" id="in-uso" min="1" max="5" value="3" step="1">
       </div>
     </div>
     <div class="sim-gauge-wrap">
       <div class="gauge" id="gauge" style="--pct:0"><div class="gauge-value" id="gauge-value">0%</div></div>
-      <div class="gauge-label">Exposição estimada de fluxo</div>
+      <div class="gauge-label">Risco estimado de pane</div>
     </div>
   </div>
 </section>
 
 <section class="wrap">
   <div class="section-head reveal">
-    <div class="section-tag">Como funciona</div>
-    <h2>Sua loja em operação em quatro passos</h2>
+    <div class="section-tag">Atendimento</div>
+    <h2>Seu carro pronto em quatro passos</h2>
   </div>
   <div class="timeline">
-    <div class="tl-step reveal"><span class="tl-num">01</span><h3>Escolha do espaço</h3><p>Você define o metro quadrado e a categoria de operação.</p></div>
-    <div class="tl-step reveal"><span class="tl-num">02</span><h3>Assinatura do contrato</h3><p>Condições comerciais definidas em conjunto com a administração.</p></div>
-    <div class="tl-step reveal"><span class="tl-num">03</span><h3>Obra e instalação</h3><p>Acompanhamento técnico da montagem da sua loja.</p></div>
-    <div class="tl-step reveal"><span class="tl-num">04</span><h3>Abertura</h3><p>Sua marca passa a operar com todo o fluxo do Origem.</p></div>
+    <div class="tl-step reveal"><span class="tl-num">01</span><h3>Agendamento</h3><p>Você marca o melhor horário por telefone ou WhatsApp.</p></div>
+    <div class="tl-step reveal"><span class="tl-num">02</span><h3>Diagnóstico</h3><p>Escaneamento eletrônico gratuito identifica a causa real.</p></div>
+    <div class="tl-step reveal"><span class="tl-num">03</span><h3>Orçamento e execução</h3><p>Você aprova cada item antes do reparo começar.</p></div>
+    <div class="tl-step reveal"><span class="tl-num">04</span><h3>Entrega revisada</h3><p>Carro testado e entregue com garantia de 90 dias.</p></div>
   </div>
 </section>
 
@@ -584,19 +552,19 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;}
     <h2>Localização e horários</h2>
   </div>
   <div class="map-card reveal">
-    <iframe src="https://www.google.com/maps?q=-18.9146,-48.2698&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de localização — Origem Centro Comercial"></iframe>
-    <div class="map-note">Ponto ilustrativo na Av. João Naves de Ávila, Uberlândia — MG, para fins de demonstração do design.</div>
+    <iframe src="https://www.google.com/maps?q=R.+Domingos+%C3%81lvares,+137+-+Pres.+Roosevelt,+Uberl%C3%A2ndia+-+MG,+38401-044&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de localização — PHM Auto Mecânica"></iframe>
   </div>
   <div class="loc-grid">
     <div class="loc-card reveal">
       <h3>Endereço</h3>
-      <p>Av. Origem, 1200, Uberlândia — MG<br>Estacionamento gratuito para clientes.</p>
-      <a class="btn-outline" href="https://www.google.com/maps?q=Uberl%C3%A2ndia,+MG" target="_blank" rel="noopener" style="display:inline-flex;">Como chegar →</a>
+      <p>R. Domingos Álvares, 137 — Pres. Roosevelt<br>Uberlândia - MG, 38401-044</p>
+      <a class="btn-outline" href="https://www.google.com/maps?q=R.+Domingos+%C3%81lvares,+137+-+Pres.+Roosevelt,+Uberl%C3%A2ndia+-+MG,+38401-044" target="_blank" rel="noopener" style="display:inline-flex;">Como chegar →</a>
     </div>
     <div class="hours-card reveal">
       <h3>Horário de funcionamento</h3>
-      <div class="hours-row"><span>Alimentação</span><b>Seg a Sáb: 11h–21h · Dom: 11h–18h</b></div>
-      <div class="hours-row"><span>Lojas e serviços</span><b>Seg a Sáb: 10h–20h · Dom: fechado</b></div>
+      <div class="hours-row"><span>Segunda a sexta</span><b>8h às 18h</b></div>
+      <div class="hours-row"><span>Sábado</span><b>8h às 12h</b></div>
+      <div class="hours-row"><span>Domingo</span><b>Fechado</b></div>
     </div>
   </div>
 </section>
@@ -604,23 +572,23 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;}
 <section class="wrap" id="contato">
   <div class="section-head reveal">
     <div class="section-tag">Fale conosco</div>
-    <h2>Quer saber mais informações?</h2>
-    <p>Preencha o formulário e nossa equipe comercial entra em contato.</p>
+    <h2>Vamos agendar o seu horário?</h2>
+    <p>Preencha o formulário ou ligue direto para (34) 3255-0827.</p>
   </div>
   <form class="contact-form reveal" onsubmit="return false;">
     <div><label>Nome</label><input type="text" placeholder="Seu nome"></div>
     <div><label>Telefone</label><input type="text" placeholder="(34) 90000-0000"></div>
-    <div class="full"><label>E-mail</label><input type="email" placeholder="voce@email.com"></div>
-    <div class="full"><label>Mensagem</label><textarea placeholder="Conte o que você procura..."></textarea></div>
+    <div class="full"><label>Veículo</label><input type="text" placeholder="Marca, modelo e ano"></div>
+    <div class="full"><label>Mensagem</label><textarea placeholder="Conte o que está acontecendo com o carro..."></textarea></div>
     <div class="full"><button class="btn-lg" type="submit">Enviar mensagem →</button></div>
   </form>
 </section>
 
 <section class="wrap">
   <div class="cta-strip reveal">
-    <h2>Traga sua marca para o Origem.</h2>
-    <p>Fale com nossa equipe comercial e conheça as condições de locação para o seu espaço.</p>
-    <a class="btn-lg" href="#contato">Falar com a equipe comercial →</a>
+    <h2>Marque seu horário na PHM.</h2>
+    <p>Diagnóstico eletrônico gratuito e orçamento sem compromisso — ligue e agende agora.</p>
+    <a class="btn-lg" href="tel:+553432550827">Ligar (34) 3255-0827 →</a>
   </div>
 </section>
 
@@ -628,16 +596,16 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;}
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <div class="logo" style="margin-bottom:14px;"><span class="mark"></span>ORIGEM</div>
-        <p style="color:var(--muted);font-size:14px;max-width:32ch;">Centro comercial com compras, lazer e serviços em um só endereço, em Uberlândia — MG.</p>
+        <div class="logo" style="margin-bottom:14px;"><span class="mark"></span>PHM AUTO MECÂNICA</div>
+        <p style="color:var(--muted);font-size:14px;max-width:32ch;">Diagnóstico de verdade, orçamento transparente e garantia real em cada serviço, em Uberlândia — MG.</p>
       </div>
-      <div><h5>Navegação</h5><ul><li>Nossas Lojas</li><li>Espaços para locação</li><li>Localização</li></ul></div>
-      <div><h5>Contato</h5><ul><li>(34) 3200-1177</li><li>(34) 98400-0000</li><li>contato@origemcentro.com.br</li></ul></div>
+      <div><h5>Navegação</h5><ul><li>Serviços</li><li>Como funciona</li><li>Localização</li></ul></div>
+      <div><h5>Contato</h5><ul><li>(34) 3255-0827</li><li>R. Domingos Álvares, 137</li><li>Pres. Roosevelt, Uberlândia - MG</li></ul></div>
       <div><h5>Siga</h5><ul><li>Instagram</li><li>Facebook</li></ul></div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 Origem Centro Comercial — marca conceitual para fins de demonstração de design.</span>
-      <span>Central de operação · protótipo</span>
+      <span>© 2026 PHM Auto Mecânica — Uberlândia, MG.</span>
+      <span>Agende seu horário: (34) 3255-0827</span>
     </div>
   </div>
 </footer>
@@ -655,9 +623,9 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;}
   var titleEl = document.getElementById('hero-title');
   var fullText = titleEl.getAttribute('aria-label');
   var glossary = {
-    'vivo':'O mix de lojas e eventos muda ao longo do ano para manter o fluxo constante.',
-    'medida':'Cada contrato de locação é ajustado ao porte e à categoria da loja.',
-    'tudo':'Compras, lazer, serviços e alimentação reunidos em um único endereço.'
+    'chute':'Sem escaneamento eletrônico, um diagnóstico é só uma tentativa — e você paga por peças que talvez nem precisasse trocar.',
+    'transparente':'Você vê e aprova cada item do orçamento antes de qualquer peça ser trocada.',
+    'garantia':'Todo serviço feito na PHM tem 90 dias de garantia contra o mesmo defeito.'
   };
   function buildTitle(text){
     titleEl.innerHTML = '';
@@ -673,7 +641,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;}
         span.appendChild(tip);
       } else { span.textContent = w; }
       titleEl.appendChild(span);
-      if (idx < arr.length - 1) titleEl.appendChild(document.createTextNode(' '));
+      if (idx < arr.length - 1) titleEl.appendChild(document.createTextNode(' '));
     });
   }
   buildTitle(fullText);
@@ -696,7 +664,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;}
         if (!start) start=ts;
         var p = Math.min((ts-start)/duration,1);
         var eased = 1-Math.pow(1-p,3);
-        el.textContent = Math.round(target*eased).toLocaleString('pt-BR')+suffix;
+        el.textContent = (Math.round(target*eased*10)/10).toLocaleString('pt-BR')+suffix;
         if (p<1) requestAnimationFrame(step);
       }
       requestAnimationFrame(step);
@@ -704,30 +672,30 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;}
   }
   setTimeout(animateCounts, 300);
 
-  /* live visitor counter with goal */
+  /* live counter with goal */
   var counterVal = document.getElementById('counter-val');
   var counterFill = document.getElementById('counter-fill');
   var counterGoalLabel = document.getElementById('counter-goal-label');
-  var GOAL = 9000;
+  var GOAL = 24;
   var current = 0;
   function fmt(n){ return n.toLocaleString('pt-BR'); }
   function tickCounter(){
-    current += Math.floor(Math.random()*22)+6;
+    current += 1;
     if (current >= GOAL){ current = 0; }
     counterVal.textContent = fmt(current);
     counterGoalLabel.textContent = fmt(current) + ' / ' + fmt(GOAL);
     counterFill.style.width = Math.min(100, (current/GOAL)*100) + '%';
   }
   tickCounter();
-  setInterval(tickCounter, reduce ? 4000 : 1400);
+  setInterval(tickCounter, reduce ? 5000 : 2600);
 
-  /* leasing process diagram */
+  /* service process diagram */
   var archInfo = {
-    contato: {title:'Contato', text:'Você preenche o formulário ou liga informando o metro quadrado desejado e o tipo de operação.'},
-    visita: {title:'Visita técnica', text:'Nossa equipe agenda uma visita ao espaço disponível junto com você.'},
-    proposta: {title:'Proposta', text:'Enviamos as condições comerciais de locação ajustadas ao porte da sua loja.'},
-    contrato: {title:'Contrato', text:'Assinatura do contrato de locação com prazos e condições definidos.'},
-    abertura: {title:'Abertura', text:'Sua loja abre as portas e passa a operar com todo o fluxo do Origem.'}
+    agendamento: {title:'Agendamento', text:'Você marca um horário fixo pelo telefone ou WhatsApp — sem deixar o carro esperando vaga no pátio.'},
+    diagnostico: {title:'Diagnóstico', text:'Escaneamento eletrônico computadorizado identifica a causa real do problema, sem custo.'},
+    orcamento: {title:'Orçamento', text:'Você recebe o orçamento detalhado e aprova cada item antes do reparo começar.'},
+    execucao: {title:'Execução', text:'Reparo feito por mecânicos certificados, com peças de procedência garantida.'},
+    entrega: {title:'Entrega', text:'Carro testado e entregue com 90 dias de garantia no serviço realizado.'}
   };
   var archInfoEl = document.getElementById('arch-info');
   document.querySelectorAll('.arch-node').forEach(function(node){
@@ -772,33 +740,26 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;}
     });
   });
 
-  document.querySelectorAll('.filter-chip').forEach(function(chip){
-    chip.addEventListener('click', function(){
-      document.querySelectorAll('.filter-chip').forEach(function(c){ c.classList.remove('active'); });
-      chip.classList.add('active');
-    });
-  });
-
   /* simulator */
-  var inArea = document.getElementById('in-area');
-  var inPos = document.getElementById('in-pos');
-  var inDias = document.getElementById('in-dias');
-  var outArea = document.getElementById('out-area');
-  var outPos = document.getElementById('out-pos');
-  var outDias = document.getElementById('out-dias');
+  var inKm = document.getElementById('in-km');
+  var inMeses = document.getElementById('in-meses');
+  var inUso = document.getElementById('in-uso');
+  var outKm = document.getElementById('out-km');
+  var outMeses = document.getElementById('out-meses');
+  var outUso = document.getElementById('out-uso');
   var gauge = document.getElementById('gauge');
   var gaugeValue = document.getElementById('gauge-value');
   function updateSim(){
-    var area = parseInt(inArea.value,10);
-    var pos = parseInt(inPos.value,10);
-    var dias = parseInt(inDias.value,10);
-    outArea.textContent = area; outPos.textContent = pos; outDias.textContent = dias;
-    var score = 20 + (pos/5)*40 + (dias/7)*24 + Math.min(area,120)/120*16;
-    score = Math.max(10, Math.min(97, Math.round(score)));
+    var km = parseInt(inKm.value,10);
+    var meses = parseInt(inMeses.value,10);
+    var uso = parseInt(inUso.value,10);
+    outKm.textContent = km; outMeses.textContent = meses; outUso.textContent = uso;
+    var score = (km/30)*36 + (meses/24)*34 + (uso/5)*30;
+    score = Math.max(6, Math.min(96, Math.round(score)));
     gauge.style.setProperty('--pct', score);
     gaugeValue.textContent = score + '%';
   }
-  [inArea,inPos,inDias].forEach(function(i){ i.addEventListener('input', updateSim); });
+  [inKm,inMeses,inUso].forEach(function(i){ i.addEventListener('input', updateSim); });
   updateSim();
 })();
 </script>
