@@ -235,6 +235,11 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
 }
 
 /* ---------- LOCATION + CONTACT ---------- */
+.map-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-bottom:20px;
+}
+.map-card iframe{display:block;width:100%;height:320px;border:0;}
+.map-note{padding:12px 20px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);}
 .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
 .loc-card,.hours-card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:28px;}
 .loc-card h3,.hours-card h3{font-size:16px;margin:0 0 14px;font-weight:800;}
@@ -578,11 +583,15 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;}
     <div class="section-tag">Onde estamos</div>
     <h2>Localização e horários</h2>
   </div>
+  <div class="map-card reveal">
+    <iframe src="https://www.google.com/maps?q=Uberl%C3%A2ndia,+MG&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de localização — Origem Centro Comercial"></iframe>
+    <div class="map-note">Localização ilustrativa (centro de Uberlândia — MG) para fins de demonstração do design.</div>
+  </div>
   <div class="loc-grid">
     <div class="loc-card reveal">
       <h3>Endereço</h3>
       <p>Av. Origem, 1200, Uberlândia — MG<br>Estacionamento gratuito para clientes.</p>
-      <a class="btn-outline" href="#" style="display:inline-flex;">Como chegar →</a>
+      <a class="btn-outline" href="https://www.google.com/maps?q=Uberl%C3%A2ndia,+MG" target="_blank" rel="noopener" style="display:inline-flex;">Como chegar →</a>
     </div>
     <div class="hours-card reveal">
       <h3>Horário de funcionamento</h3>
